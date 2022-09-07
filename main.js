@@ -26,6 +26,7 @@ function increaseHomeScoreThree() {
   homeScoreEl.textContent = homeScore;
 }
 
+// Listen for clicks on the Home buttons
 homeBtn1.addEventListener("click", increaseHomeScoreOne);
 homeBtn2.addEventListener("click", increaseHomeScoreTwo);
 homeBtn3.addEventListener("click", increaseHomeScoreThree);
@@ -46,6 +47,7 @@ function increaseGuestScoreThree() {
   guestScoreEl.textContent = guestScore;
 }
 
+// Listen for clicks on the Guest buttons
 guestBtn1.addEventListener("click", increaseGuestScoreOne);
 guestBtn2.addEventListener("click", increaseGuestScoreTwo);
 guestBtn3.addEventListener("click", increaseGuestScoreThree);
