@@ -1,7 +1,23 @@
 :root {
-  --ff-heading: Verdana, Geneva, Tahoma, sans-serif;
-}
+  --clr-accent-400: hsla(349, 93%, 64%, 1);
 
+  --clr-primary-700: hsla(229, 47%, 20%, 1);
+
+  --clr-neutral-100: hsla(0, 0%, 93%, 1);
+  --clr-neutral-200: hsla(224, 44%, 73%, 1);
+  --clr-neutral-300: hsla(353, 100%, 2%, 1);
+
+  --ff-primary: Verdana, Geneva, Tahoma, sans-serif;
+
+  --ff-heading: var(--primary);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 1.125rem;
+  --fs-700: 2.5rem;
+  --fs-800: 5.625rem;
+}
 
 /* https://piccalil.li/blog/a-modern-css-reset */
 
