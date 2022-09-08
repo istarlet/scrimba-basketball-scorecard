@@ -90,7 +90,23 @@ svg {
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.board {
+  background-color: var(--clr-primary-700);
+  display: flex;
+  gap: 3em;
+
+  height: 385px;
+  width: 575px;
+}
+
+.home,
+.guest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
