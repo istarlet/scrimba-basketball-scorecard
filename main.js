@@ -51,3 +51,14 @@ function increaseGuestScoreThree() {
 guestBtn1.addEventListener("click", increaseGuestScoreOne);
 guestBtn2.addEventListener("click", increaseGuestScoreTwo);
 guestBtn3.addEventListener("click", increaseGuestScoreThree);
+
+
+// Store Data
+let guestData = guestScore
+localStorage.setItem("myGuestData", guestData)
+
+// Get Data
+let savedGuestData = localStorage.getItem("myGuestData")
+
+// Update and log again
+savedGuestData = localStorage.getItem("myGuestData")
