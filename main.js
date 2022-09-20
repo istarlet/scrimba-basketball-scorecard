@@ -14,17 +14,32 @@ let guestScore = 0;
 function increaseHomeScoreOne() {
   homeScore += 1;
   homeScoreEl.textContent = homeScore;
+
+  // Save to localStorage
+  localStorage.setItem("myHomeData", homeScoreEl.textContent);
 }
 
 function increaseHomeScoreTwo() {
   homeScore += 2;
   homeScoreEl.textContent = homeScore;
+  localStorage.setItem("myHomeData", homeScoreEl.textContent);
 }
 
 function increaseHomeScoreThree() {
   homeScore += 3;
   homeScoreEl.textContent = homeScore;
+  localStorage.setItem("myHomeData", homeScoreEl.textContent);
 }
+
+// Load number from localStorage
+function loadNumber() {
+  let saved = localStorage.getItem("myHomeData");
+  if (!saved) return;
+  homeScoreEl.textContent = saved;
+}
+
+// Load saved number from localStorage
+loadNumber();
 
 // Listen for clicks on the Home buttons
 homeBtn1.addEventListener("click", increaseHomeScoreOne);
@@ -52,13 +67,12 @@ guestBtn1.addEventListener("click", increaseGuestScoreOne);
 guestBtn2.addEventListener("click", increaseGuestScoreTwo);
 guestBtn3.addEventListener("click", increaseGuestScoreThree);
 
-
 // Store Data
-let guestData = guestScore
-localStorage.setItem("myGuestData", guestData)
+let guestData = guestScore;
+localStorage.setItem("myGuestData", guestData);
 
 // Get Data
-let savedGuestData = localStorage.getItem("myGuestData")
+let savedGuestData = localStorage.getItem("myGuestData");
 
 // Update and log again
-savedGuestData = localStorage.getItem("myGuestData")
+savedGuestData = localStorage.getItem("myGuestData");
