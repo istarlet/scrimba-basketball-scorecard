@@ -1,1 +1,1 @@
-# scrimba-basketball-scorecard
+# Scrimba Basketball Scorecard
